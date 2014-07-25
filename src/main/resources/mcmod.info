@@ -1,0 +1,21 @@
+[
+{
+  "modid": "betterbeacon",
+  "name": "Better Beacon",
+  "description": "Better version of the vanilla Beacon",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "mpw"
+  ],
+  "credits": "mpw",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
