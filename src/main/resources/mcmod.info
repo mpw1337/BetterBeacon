@@ -3,8 +3,8 @@
   "modid": "betterbeacon",
   "name": "Better Beacon",
   "description": "Better version of the vanilla Beacon",
-  "version": "${mod_version}",
-  "mcversion": "${minecraft_version}",
+  "version": "1.0",
+  "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": [
