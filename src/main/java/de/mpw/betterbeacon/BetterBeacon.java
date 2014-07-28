@@ -7,6 +7,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import de.mpw.betterbeacon.handler.ConfigurationHandler;
+import de.mpw.betterbeacon.init.ModBlocks;
+import de.mpw.betterbeacon.init.ModItems;
 import de.mpw.betterbeacon.proxy.IProxy;
 import de.mpw.betterbeacon.reference.Reference;
 import de.mpw.betterbeacon.utility.LogHelper;
@@ -31,6 +33,8 @@ public class BetterBeacon {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ModItems.init();
+        ModBlocks.init();
         LogHelper.info("Pre Initialisation Complete");
     }
 
