@@ -2,6 +2,7 @@ package de.mpw.betterbeacon.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import de.mpw.betterbeacon.creativetab.CreativeTabBB;
 import de.mpw.betterbeacon.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -13,6 +14,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 public class BlockBB extends Block {
     public BlockBB(Material material) {
         super(material);
+        this.setCreativeTab(CreativeTabBB.CreativeTabs_BB_TAB);
 
     }
 

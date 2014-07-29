@@ -2,6 +2,7 @@ package de.mpw.betterbeacon.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import de.mpw.betterbeacon.creativetab.CreativeTabBB;
 import de.mpw.betterbeacon.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ public class ItemBB extends Item {
     public ItemBB() {
         super();
         this.maxStackSize = 1;
-        //this.setCreativeTab(CreativeTab.tabBetterBeacon);
+        this.setCreativeTab(CreativeTabBB.CreativeTabs_BB_TAB);
     }
 
     @Override
