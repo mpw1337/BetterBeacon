@@ -1,5 +1,6 @@
 package de.mpw.betterbeacon.block;
 
+import de.mpw.betterbeacon.tileentity.TileEntityBetterBeacon;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
@@ -18,11 +19,11 @@ public class BlockBetterBeacon extends BlockBB implements ITileEntityProvider {
 
     @Override
     public int getRenderType() {
-        return 34;
+        return -1;
     }
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return null;
+        return new TileEntityBetterBeacon();
     }
 }
